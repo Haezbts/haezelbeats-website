@@ -1,0 +1,238 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)),url(Mic.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.menu-bar
+{
+    
+    text-align: center;
+    
+}
+.menu-bar-2
+{
+    
+    text-align: right;
+}
+.menu-bar-2 ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar-2 ul li
+{
+    width: 100px;
+    margin: 15px;
+    padding: 15px;
+    margin-right: 50px;
+}
+.menu-bar-2 .fa
+{
+    margin-right: 8px;
+  
+}
+.menu-bar-2 ul li a
+{
+    text-decoration: none;
+    color: white; 
+    text-align: center; 
+}
+.menu-bar-2 ul li:hover
+{
+    background: #d10909;
+    color: #d10909;
+    border-radius: 3px ; 
+    transition: 1.5s;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+ .menu-bar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px ; 
+    transition: 0.5s;
+}
+.menu-bar  .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    transition: 0.5s;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #b2ff00; 
+    font-size: 12px;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -30px;
+    margin-left: 100px;
+    background: rgb(20, 52, 52);
+    font-size: 10px;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+.content h1
+{   font-size: 60px;
+    margin-top: 150px;
+
+}
+.content p
+{
+    margin: 19px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span
+{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span
+{
+    width: 100%; 
+}
+button:hover
+{
+    border: none;
+}
+.search
+{
+    width: 330px;
+    float: left;
+    margin-left: 80px;
+}
+.srch
+{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid orange;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 16px;
+    border-right: none;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn
+{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2x solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.btn:focus
+{
+    outline: none;
+}
+.srch:focus
+{
+    outline: none;
+}
